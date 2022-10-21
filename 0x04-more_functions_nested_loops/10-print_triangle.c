@@ -2,9 +2,9 @@
 
 /**
  * print_triangle - prints a triangle using '#'
- * @t: size of the triangle
+ * @n: size of the triangle
  */
-void print_triangle(int t)
+void print_triangle(int n)
 {
 	int h, tri;
 
