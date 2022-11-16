@@ -8,10 +8,12 @@ typedef struct dog dog_t;
 
 
 /**
- * struct - combines data items of different kinds
+ * struct dog - combines data items of different kinds
  * @name: name of character
  * @float: number of age
  * @owner: name of character
+ * Description: struct called "dog" that stores its name, its age
+ * and the name of its owner.
  */
 
 struct dog
