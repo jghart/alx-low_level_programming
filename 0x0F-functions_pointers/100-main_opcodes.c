@@ -10,7 +10,7 @@
 */
 int main(int argc, char *argv[])
 {
-	char *opc = (char *) main;
+	char *opc;
 	int i, nbytes;
 
 	if (argc != 2)
@@ -27,13 +27,16 @@ int main(int argc, char *argv[])
 		exit(2);
 	}
 
+	arr = (char *)main;
+
 	for (i = 0; i < nbytes; i++)
 	{
-		printf("%02x", opc[i] & 0xFF);
-		if (i != nbytes - 1)
-			printf(" ");
+		if (i == nbytes - 1)
+		{
+			printf("%02hhx\n", arr[i]);
+			break;
+		}
+		printf("%02hhx ", arr[i]);
 	}
-
-	printf("\n");
 	return (0);
 }
