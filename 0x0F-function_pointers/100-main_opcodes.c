@@ -10,7 +10,7 @@
 */
 int main(int argc, char *argv[])
 {
-	char *opc;
+	char *arr;
 	int i, nbytes;
 
 	if (argc != 2)
@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
 		exit(2);
 	}
 
-	opc = (char *)main;
+	arr = (char *)main;
 
 	for (i = 0; i < nbytes; i++)
 	{
