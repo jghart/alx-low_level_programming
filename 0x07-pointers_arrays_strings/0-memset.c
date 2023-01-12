@@ -1,21 +1,21 @@
 #include "main.h"
-#include <string.h>
 
 /**
  * _memset - fills memory with a constant byte
  * @s: string
- * @b: character
+ * @b: constant byte
  * @n: value of integer
  * Return: returns changed array with the new value
  */
 
 char *_memset(char *s, char b, unsigned int n)
 {
-	unsigned int i;
+	unsigned int count = 0;
 
-	for (i = 0; i < n; i++)
+	while (count < n)
 	{
-		s[i] = b;
+		s[count] = b;
+		count++;
 	}
 	return (s);
 }
