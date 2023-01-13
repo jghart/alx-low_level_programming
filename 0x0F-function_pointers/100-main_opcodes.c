@@ -7,10 +7,10 @@
  * @argv: argument vector.
  *
  * Return: Always 0.
-*/
+ */
 int main(int argc, char *argv[])
 {
-	char *arr;
+	char *opc = (char *) main;
 	int i, nbytes;
 
 	if (argc != 2)
@@ -27,16 +27,13 @@ int main(int argc, char *argv[])
 		exit(2);
 	}
 
-	arr = (char *)main;
-
 	for (i = 0; i < nbytes; i++)
 	{
-		if (i == nbytes - 1)
-		{
-			printf("%02hhx\n", arr[i]);
-			break;
-		}
-		printf("%02hhx ", arr[i]);
+		printf("%02x", opc[i] & 0xFF);
+		if (i != nbytes - 1)
+			printf(" ");
 	}
+
+	printf("\n");
 	return (0);
 }
