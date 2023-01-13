@@ -4,7 +4,7 @@
 
 /**
  * main - prints out an information
- * Return: Always 0
+ * Return: Always 1
  */
 int main(void)
 {
