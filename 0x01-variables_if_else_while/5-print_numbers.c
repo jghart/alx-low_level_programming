@@ -1,18 +1,26 @@
 #include <stdio.h>
 
 /**
- * main - prints all strings from 0 t0 9
- * Return: Always 0
+ * main - print single digit numbers
+ *
+ * Descripton: print single digit numbers
+ *
+ * Return: Always 0 (Success)
  */
 
 int main(void)
 {
-	int num;
+	int i;
 
-	for (num = 0; num < 0; num++)
-		printf("&d", num);
+	i = 48;
 
-	printf("\n");
+	while (i < 58)
+	{
+		putchar(i);
+		i++;
+	}
+
+	putchar(10);
 
 	return (0);
 }
